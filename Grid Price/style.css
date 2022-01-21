@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    max-width: 1400px;
+    min-width: 375px;
+    margin-top: 0px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "up up" "left right";
+    gap: 0px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.up {
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 40px;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    grid-area: up;
+}
+
+.up > h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.up > h2 {
+    color: hsl(71, 73%, 54%);
+    margin: 20px 0px;
+}
+
+.up > h3 {
+    color: hsl(218, 22%, 67%);
+    margin: 20px 0px;
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 10px;
+    padding: 40px;
+    width: 310px;
+    height: 200px;
+    margin: 0px 0px 0px auto;
+    grid-area: left;
+}
+
+.left > h1 {
+    color: white;
+    margin: 20px 0px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.left > h2 {
+    color: white;
+}
+
+.left > h3 {
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 40px;
+}
+
+.left > h4 {
+    display: inline-block;
+    color: hsla(203, 44%, 93%, 0.63);
+    margin-top: 10px;
+}
+
+.left > a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    font-size: 1.3em;
+    margin: 20px 0px;
+    padding: 15px 116px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.405);
+}
+
+.left > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: hsl(71, 73%, 51%);
+    box-shadow: 7px 9px 10px rgba(0, 0, 0, 0.541);
+}
+
+.right {
+    background-color: #65C5C8;
+    border-radius: 0px 0px 10px 0px;
+    padding: 40px;
+    width: 310px;
+    height: 200px;
+    grid-area: right;
+}
+
+.right > h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.right > h3 {
+    color: hsla(203, 44%, 93%, 0.63);;
+}
+
+@media only screen and (max-width:790px) {
+    .grid{
+        display: grid;
+        grid-template-areas: "up" "left" "right";
+        gap: 0px;
+    }
+
+    .up {
+        background-color: white;
+        border-radius: 10px 10px 0px 0px;
+        padding: 40px;
+        width: 375px;
+        margin: auto;
+        margin-top: 100px;
+        grid-area: up;
+    }
+    
+    .up > h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    
+    .up > h2 {
+        color: hsl(71, 73%, 54%);
+        margin: 20px 0px;
+    }
+    
+    .up > h3 {
+        color: hsl(218, 22%, 67%);
+        margin: 20px 0px;
+    }
+
+    .left {
+        background-color: hsl(179, 62%, 43%);
+        border-radius: 0px;
+        padding: 40px;
+        width: 375px;
+        height: 200px;
+        margin: 0px auto;
+        grid-area: left;
+    }
+
+    .left > h1 {
+        color: white;
+        margin: 20px 0px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+    
+    .left > h2 {
+        color: white;
+    }
+    
+    .left > h3 {
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 40px;
+    }
+    
+    .left > h4 {
+        display: inline-block;
+        color: hsla(203, 44%, 93%, 0.63);
+        margin-top: 10px;
+    }
+    
+    .left > a {
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+        background-color: hsl(71, 73%, 54%);
+        font-size: 1.3em;
+        margin: 20px 0px;
+        padding: 15px 116px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.405);
+    }
+    
+    .left > a:hover {
+        color: rgb(255, 255, 255);
+        background-color: hsl(71, 73%, 51%);
+        box-shadow: 7px 9px 10px rgba(0, 0, 0, 0.541);
+    }
+
+    .right {
+        background-color: #65C5C8;
+        border-radius: 0px 0px 10px 10px;
+        padding: 40px;
+        width: 375px;
+        height: 200px;
+        margin: auto;
+        grid-area: right;
+    }
+    
+    .right > h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .right > h3 {
+        color: hsla(203, 44%, 93%, 0.63);;
+    }
+}
